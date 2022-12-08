@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a446df127f6ea89e54974effe1d8513a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a446df127f6ea89e54974effe1d8513a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a446df127f6ea89e54974effe1d8513a = L.map(
+                "map_a446df127f6ea89e54974effe1d8513a",
+                {
+                    center: [22.146575836804843, 72.22097915374168],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b2b529371862070b43e8a5c30d9cbbe3 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            var circle_8325aa5da835380da223c494662ef01c = L.circle(
+                [23.00608919467751, 72.53738552598051],
+                {"bubblingMouseEvents": true, "color": "indigo", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "indigo", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11836.0, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            var circle_40779d76b00334c4b319d5084d7bff3f = L.circle(
+                [23.00608919467751, 72.53738552598051],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 60915.25, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            circle_40779d76b00334c4b319d5084d7bff3f.bindTooltip(
+                `<div>
+                     In Ahmedabad district, GSM_Count: 4304, Total_Towers: 22151
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_9fd4bc70c14b113abc91bab44b03ecc0 = L.circle(
+                [21.41945016317539, 71.26288204898394],
+                {"bubblingMouseEvents": true, "color": "indigo", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "indigo", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1738.0, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            var circle_03fa15559d580e73821e3301d384bca4 = L.circle(
+                [21.41945016317539, 71.26288204898394],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8877.0, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            circle_03fa15559d580e73821e3301d384bca4.bindTooltip(
+                `<div>
+                     In Amreli district, GSM_Count: 632, Total_Towers: 3228
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_ed501387fffa7c914b467b39f3d6fda7 = L.circle(
+                [22.493708044450884, 72.87689392127936],
+                {"bubblingMouseEvents": true, "color": "indigo", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "indigo", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2186.25, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            var circle_f7d9b3c1169b6ab267a26b9bb1c3711a = L.circle(
+                [22.493708044450884, 72.87689392127936],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11066.0, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            circle_f7d9b3c1169b6ab267a26b9bb1c3711a.bindTooltip(
+                `<div>
+                     In Anand district, GSM_Count: 795, Total_Towers: 4024
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_f9b91f49bce2a65689248a8d5b4ad24a = L.circle(
+                [23.45874350718236, 73.28697525856349],
+                {"bubblingMouseEvents": true, "color": "indigo", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "indigo", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 343.75, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            var circle_fa991fc1f56474f58fc80c0df1f9142f = L.circle(
+                [23.45874350718236, 73.28697525856349],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2488.75, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            circle_fa991fc1f56474f58fc80c0df1f9142f.bindTooltip(
+                `<div>
+                     In Arvalli district, GSM_Count: 125, Total_Towers: 905
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_a439388ac0e6e5c8c4f976d520aead46 = L.circle(
+                [24.245330865159964, 72.1126619191546],
+                {"bubblingMouseEvents": true, "color": "indigo", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "indigo", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2917.75, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            var circle_9c1fe7e4b2c0e6f9d00ece189319e4ed = L.circle(
+                [24.245330865159964, 72.1126619191546],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15028.75, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            circle_9c1fe7e4b2c0e6f9d00ece189319e4ed.bindTooltip(
+                `<div>
+                     In Banaskantha district, GSM_Count: 1061, Total_Towers: 5465
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_94ba4270b7a04fff066c0440285aa4b9 = L.circle(
+                [21.731175696579818, 72.9542703295639],
+                {"bubblingMouseEvents": true, "color": "indigo", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "indigo", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2648.25, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            var circle_457aa39b45ee1e790297cba3b0d458df = L.circle(
+                [21.731175696579818, 72.9542703295639],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11602.25, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            circle_457aa39b45ee1e790297cba3b0d458df.bindTooltip(
+                `<div>
+                     In Bharuch district, GSM_Count: 963, Total_Towers: 4219
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_afcff7bbda88c26b44f3691ca1da708c = L.circle(
+                [21.600306605042668, 71.96418812636145],
+                {"bubblingMouseEvents": true, "color": "indigo", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "indigo", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2722.5, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            var circle_a003b1ec8e18dcd4baffe65f61994a2e = L.circle(
+                [21.600306605042668, 71.96418812636145],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13851.75, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            circle_a003b1ec8e18dcd4baffe65f61994a2e.bindTooltip(
+                `<div>
+                     In Bhavnagar district, GSM_Count: 990, Total_Towers: 5037
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_286ab014f9647bb48f27686ff0dd2a28 = L.circle(
+                [22.13176170740388, 71.68160598162594],
+                {"bubblingMouseEvents": true, "color": "indigo", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "indigo", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 635.25, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            var circle_696eaa9011d91d4dc0779644791327d3 = L.circle(
+                [22.13176170740388, 71.68160598162594],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3146.0, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            circle_696eaa9011d91d4dc0779644791327d3.bindTooltip(
+                `<div>
+                     In Botad district, GSM_Count: 231, Total_Towers: 1144
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_6fa8b00f6b9cac3f42c4f5610ad56667 = L.circle(
+                [22.23104564176018, 73.8323338426634],
+                {"bubblingMouseEvents": true, "color": "indigo", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "indigo", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 266.75, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            var circle_55cc611b52f57e921f2102818c903560 = L.circle(
+                [22.23104564176018, 73.8323338426634],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1765.5, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            circle_55cc611b52f57e921f2102818c903560.bindTooltip(
+                `<div>
+                     In Chhotaudepur district, GSM_Count: 97, Total_Towers: 642
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_d81ce8bd796ca37b50d60842e8c7ce52 = L.circle(
+                [20.248366085219725, 73.00769791344891],
+                {"bubblingMouseEvents": true, "color": "indigo", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "indigo", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 429.0, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            var circle_8cc13951dd3207e076fc60378d91c147 = L.circle(
+                [20.248366085219725, 73.00769791344891],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2065.25, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            circle_8cc13951dd3207e076fc60378d91c147.bindTooltip(
+                `<div>
+                     In Dadra and Nagar Haveli district, GSM_Count: 156, Total_Towers: 751
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_0c5cacb942a7851da83d5bd7275c0466 = L.circle(
+                [22.867673293897198, 74.1303912173451],
+                {"bubblingMouseEvents": true, "color": "indigo", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "indigo", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 893.75, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            var circle_362f6cfe84842ac2dbf6b6866ff722a0 = L.circle(
+                [22.867673293897198, 74.1303912173451],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5137.0, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            circle_362f6cfe84842ac2dbf6b6866ff722a0.bindTooltip(
+                `<div>
+                     In Dahod district, GSM_Count: 325, Total_Towers: 1868
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_2aeab6e4a2bc21a1c2721efacf00dafe = L.circle(
+                [20.391466902891217, 72.88723758989381],
+                {"bubblingMouseEvents": true, "color": "indigo", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "indigo", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 484.0, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            var circle_6b56cf4f9be98d01b5931df668a5ee28 = L.circle(
+                [20.391466902891217, 72.88723758989381],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2073.5, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            circle_6b56cf4f9be98d01b5931df668a5ee28.bindTooltip(
+                `<div>
+                     In Daman district, GSM_Count: 176, Total_Towers: 754
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_d3596d6e1a29b220a98fe0697770757c = L.circle(
+                [20.769472779274622, 73.67543728590671],
+                {"bubblingMouseEvents": true, "color": "indigo", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "indigo", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 134.75, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            var circle_ebd3426e8fdc2af66e87c94189a90470 = L.circle(
+                [20.769472779274622, 73.67543728590671],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 530.75, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            circle_ebd3426e8fdc2af66e87c94189a90470.bindTooltip(
+                `<div>
+                     In Dangs district, GSM_Count: 49, Total_Towers: 193
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_8e9207317a38bf37f96b15446008dbb4 = L.circle(
+                [22.167176785636265, 69.40571737408281],
+                {"bubblingMouseEvents": true, "color": "indigo", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "indigo", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 580.25, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            var circle_2b71584b503c17ec70090b7098f7264d = L.circle(
+                [22.167176785636265, 69.40571737408281],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3522.75, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            circle_2b71584b503c17ec70090b7098f7264d.bindTooltip(
+                `<div>
+                     In Devbhumi Dwarka district, GSM_Count: 211, Total_Towers: 1281
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_10b8b3f10f80ed2f9d7427fd160e165a = L.circle(
+                [20.71928457627121, 70.93968093220343],
+                {"bubblingMouseEvents": true, "color": "indigo", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "indigo", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 52.25, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            var circle_b2bfd0199bac1de57e8710c4fac8ea38 = L.circle(
+                [20.71928457627121, 70.93968093220343],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 324.5, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            circle_b2bfd0199bac1de57e8710c4fac8ea38.bindTooltip(
+                `<div>
+                     In Diu district, GSM_Count: 19, Total_Towers: 118
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_2c8edb6dffc838515b40fbd8a575a90d = L.circle(
+                [23.23032578136816, 72.63054898582914],
+                {"bubblingMouseEvents": true, "color": "indigo", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "indigo", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2257.75, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            var circle_f2947befbc919038f556fe3f1af7b030 = L.circle(
+                [23.23032578136816, 72.63054898582914],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11959.75, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            circle_f2947befbc919038f556fe3f1af7b030.bindTooltip(
+                `<div>
+                     In Gandhinagar district, GSM_Count: 821, Total_Towers: 4349
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_490569d95d7a60b52c9ec1d9cdeb56b2 = L.circle(
+                [20.89473089400194, 70.65481104238744],
+                {"bubblingMouseEvents": true, "color": "indigo", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "indigo", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 368.5, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            var circle_b34f58f12df5e77bb6bd27a346f64949 = L.circle(
+                [20.89473089400194, 70.65481104238744],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2810.5, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            circle_b34f58f12df5e77bb6bd27a346f64949.bindTooltip(
+                `<div>
+                     In Gir Somnath district, GSM_Count: 134, Total_Towers: 1022
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_baf9f27a908cb9e515e53ce0fcbe76ff = L.circle(
+                [22.356378263537493, 70.02463577239521],
+                {"bubblingMouseEvents": true, "color": "indigo", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "indigo", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2345.75, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            var circle_dd64bc44b39cd8c94061b77431b0acf6 = L.circle(
+                [22.356378263537493, 70.02463577239521],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13651.0, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            circle_dd64bc44b39cd8c94061b77431b0acf6.bindTooltip(
+                `<div>
+                     In Jamnagar district, GSM_Count: 853, Total_Towers: 4964
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_96badb1ca09c23dd041fb5238b195b93 = L.circle(
+                [21.27764925040583, 70.45704208114333],
+                {"bubblingMouseEvents": true, "color": "indigo", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "indigo", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2348.5, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            var circle_52d1a048417557312bbb552c82bea2ba = L.circle(
+                [21.27764925040583, 70.45704208114333],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12196.25, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            circle_52d1a048417557312bbb552c82bea2ba.bindTooltip(
+                `<div>
+                     In Junagadh district, GSM_Count: 854, Total_Towers: 4435
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_eddd32245fb0275101d71eae411d674e = L.circle(
+                [23.184741248381094, 69.81380777014645],
+                {"bubblingMouseEvents": true, "color": "indigo", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "indigo", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3704.25, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            var circle_71006e2fd48ff43f40208c2dcc2ac5d3 = L.circle(
+                [23.184741248381094, 69.81380777014645],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18040.0, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            circle_71006e2fd48ff43f40208c2dcc2ac5d3.bindTooltip(
+                `<div>
+                     In Kachchh district, GSM_Count: 1347, Total_Towers: 6560
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_42d62d772a1bb8d43167cc012a21e351 = L.circle(
+                [22.798844755584607, 72.93012971599344],
+                {"bubblingMouseEvents": true, "color": "indigo", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "indigo", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1724.25, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            var circle_29bf97b87a9743b4058594b8cab6b785 = L.circle(
+                [22.798844755584607, 72.93012971599344],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9149.25, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            circle_29bf97b87a9743b4058594b8cab6b785.bindTooltip(
+                `<div>
+                     In Kheda district, GSM_Count: 627, Total_Towers: 3327
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_0a0d242d57676e58b953c8f9695d6a67 = L.circle(
+                [23.145425580441643, 73.60938183753929],
+                {"bubblingMouseEvents": true, "color": "indigo", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "indigo", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 324.5, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            var circle_87989bfcefb523a6d50b199516e45428 = L.circle(
+                [23.145425580441643, 73.60938183753929],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1743.5, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            circle_87989bfcefb523a6d50b199516e45428.bindTooltip(
+                `<div>
+                     In Mahisagar district, GSM_Count: 118, Total_Towers: 634
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_cc31ccdb5b346241d758bd284f5cd6d4 = L.circle(
+                [23.59184175365384, 72.45154543968107],
+                {"bubblingMouseEvents": true, "color": "indigo", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "indigo", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2634.5, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            var circle_5714b6a537544e9a75fa043bfe04335f = L.circle(
+                [23.59184175365384, 72.45154543968107],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13678.5, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            circle_5714b6a537544e9a75fa043bfe04335f.bindTooltip(
+                `<div>
+                     In Mehsana district, GSM_Count: 958, Total_Towers: 4974
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_56e9f45a1bf095008961dab498d68f63 = L.circle(
+                [22.802048661655167, 70.89507908392615],
+                {"bubblingMouseEvents": true, "color": "indigo", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "indigo", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1045.0, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            var circle_fb438b77437154eceb486dc605ed9a38 = L.circle(
+                [22.802048661655167, 70.89507908392615],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6649.5, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            circle_fb438b77437154eceb486dc605ed9a38.bindTooltip(
+                `<div>
+                     In Morbi district, GSM_Count: 380, Total_Towers: 2418
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_003f370a044c4424265df6c92dd29f82 = L.circle(
+                [21.78131493030306, 73.60434474393934],
+                {"bubblingMouseEvents": true, "color": "indigo", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "indigo", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 332.75, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            var circle_c0cb60c99b1bc1a461ba22dfc455a956 = L.circle(
+                [21.78131493030306, 73.60434474393934],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1815.0, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            circle_c0cb60c99b1bc1a461ba22dfc455a956.bindTooltip(
+                `<div>
+                     In Narmada district, GSM_Count: 121, Total_Towers: 660
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_ab7b122666d7c0febdb18d1be916bb6b = L.circle(
+                [20.845319407932656, 73.02739754270218],
+                {"bubblingMouseEvents": true, "color": "indigo", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "indigo", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1424.5, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            var circle_9cc1eff351595b4ab75f765c85660eb8 = L.circle(
+                [20.845319407932656, 73.02739754270218],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6451.5, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            circle_9cc1eff351595b4ab75f765c85660eb8.bindTooltip(
+                `<div>
+                     In Navsari district, GSM_Count: 518, Total_Towers: 2346
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_ad43fa0eb98293bc1c2b3a921be61ba1 = L.circle(
+                [22.777066714009212, 73.61072688950885],
+                {"bubblingMouseEvents": true, "color": "indigo", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "indigo", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1251.25, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            var circle_db55f9b94b6b2bf86913db7d5190d617 = L.circle(
+                [22.777066714009212, 73.61072688950885],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7106.0, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            circle_db55f9b94b6b2bf86913db7d5190d617.bindTooltip(
+                `<div>
+                     In Panchmahal district, GSM_Count: 455, Total_Towers: 2584
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_81353405878cb27e9d19e65746e50313 = L.circle(
+                [23.823064359385736, 71.98469094077885],
+                {"bubblingMouseEvents": true, "color": "indigo", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "indigo", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1383.25, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            var circle_216ed6e56f38fb50da0ee179032268c5 = L.circle(
+                [23.823064359385736, 71.98469094077885],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7562.5, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            circle_216ed6e56f38fb50da0ee179032268c5.bindTooltip(
+                `<div>
+                     In Patan district, GSM_Count: 503, Total_Towers: 2750
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_aae44c48a73c68b94e6a6b18ec4098ae = L.circle(
+                [21.642525623209995, 69.71263041323562],
+                {"bubblingMouseEvents": true, "color": "indigo", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "indigo", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 618.75, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            var circle_ecb2aa5783af0924e1faeaca8eb69317 = L.circle(
+                [21.642525623209995, 69.71263041323562],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3195.5, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            circle_ecb2aa5783af0924e1faeaca8eb69317.bindTooltip(
+                `<div>
+                     In Porbandar district, GSM_Count: 225, Total_Towers: 1162
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_8ab94bde62c58664cc325ff039379339 = L.circle(
+                [22.181342707772046, 70.76898910206194],
+                {"bubblingMouseEvents": true, "color": "indigo", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "indigo", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5269.0, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            var circle_e940af9cdb9421af8091a99be22d7803 = L.circle(
+                [22.181342707772046, 70.76898910206194],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 27662.25, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            circle_e940af9cdb9421af8091a99be22d7803.bindTooltip(
+                `<div>
+                     In Rajkot district, GSM_Count: 1916, Total_Towers: 10059
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_c637affc9742ca0cf44eb4a0eefa0afc = L.circle(
+                [23.65478860341726, 73.05907982660601],
+                {"bubblingMouseEvents": true, "color": "indigo", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "indigo", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2018.5, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            var circle_02d5d93d5a674f8acaa90b1940725c7d = L.circle(
+                [23.65478860341726, 73.05907982660601],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9297.75, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            circle_02d5d93d5a674f8acaa90b1940725c7d.bindTooltip(
+                `<div>
+                     In Sabarkantha district, GSM_Count: 734, Total_Towers: 3381
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_fd8ecdc1722cd05d02c7d3303587bb85 = L.circle(
+                [21.19409999483606, 72.89068312221669],
+                {"bubblingMouseEvents": true, "color": "indigo", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "indigo", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9575.5, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            var circle_772c174f0b7e3124e7b892cb57a9e067 = L.circle(
+                [21.19409999483606, 72.89068312221669],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 48730.0, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            circle_772c174f0b7e3124e7b892cb57a9e067.bindTooltip(
+                `<div>
+                     In Surat district, GSM_Count: 3482, Total_Towers: 17720
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_8f82d54b82bc02e4d8f5e02e7df9f5a7 = L.circle(
+                [22.7434906433019, 71.56640579287378],
+                {"bubblingMouseEvents": true, "color": "indigo", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "indigo", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1806.75, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            var circle_5c24f52809f7c6e381c02968b19b92e7 = L.circle(
+                [22.7434906433019, 71.56640579287378],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10054.0, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            circle_5c24f52809f7c6e381c02968b19b92e7.bindTooltip(
+                `<div>
+                     In Surendranagar district, GSM_Count: 657, Total_Towers: 3656
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_5ef2309b9eea19471d7c63b5cfdabfa9 = L.circle(
+                [21.144158186357927, 73.54246908023539],
+                {"bubblingMouseEvents": true, "color": "indigo", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "indigo", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 233.75, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            var circle_59ae4574424e37dfe83466d987ab0cc6 = L.circle(
+                [21.144158186357927, 73.54246908023539],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1751.75, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            circle_59ae4574424e37dfe83466d987ab0cc6.bindTooltip(
+                `<div>
+                     In Tapi district, GSM_Count: 85, Total_Towers: 637
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_8c65d8413852142561e3a855af5ae26a = L.circle(
+                [22.287276608908545, 73.21253961755124],
+                {"bubblingMouseEvents": true, "color": "indigo", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "indigo", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5046.25, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            var circle_62d8853bcc241376c285d169f14ffd31 = L.circle(
+                [22.287276608908545, 73.21253961755124],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26155.25, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            circle_62d8853bcc241376c285d169f14ffd31.bindTooltip(
+                `<div>
+                     In Vadodara district, GSM_Count: 1835, Total_Towers: 9511
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_fdf57a38c7b132f39a9105b1eeedd81f = L.circle(
+                [20.43924430788724, 72.95295146689153],
+                {"bubblingMouseEvents": true, "color": "indigo", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "indigo", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2227.5, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            var circle_619fe88d2adb0dccf37f2818e31bae4f = L.circle(
+                [20.43924430788724, 72.95295146689153],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10078.75, "stroke": true, "weight": 3}
+            ).addTo(map_a446df127f6ea89e54974effe1d8513a);
+        
+    
+            circle_619fe88d2adb0dccf37f2818e31bae4f.bindTooltip(
+                `<div>
+                     In Valsad district, GSM_Count: 810, Total_Towers: 3665
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
